@@ -1,10 +1,15 @@
 package/
 Document/
 # inputディレクトリ内のすべてのディレクトリを無視
-input/*/
+input/images/*
+input/videoes/*
+input/texts/*
+
+output/images/*
+output/videos/*
 
 # ただし、stageディレクトリは無視しない
 !input/images/stage/
 
 # outputディレクトリ内のすべてのディレクトリを無視
-output/*/
+output/*

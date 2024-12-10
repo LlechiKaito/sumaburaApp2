@@ -1,0 +1,4 @@
+python src/image_check.py
+python src/sam2_check.py
+python src/sam2_running.py
+

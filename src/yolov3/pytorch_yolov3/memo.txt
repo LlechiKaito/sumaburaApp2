@@ -1,0 +1,1 @@
+python detect_video.py --input video1.mp4 --output output --weights train_output/yolov3_final.pth --config config/yolov3_custom.yaml --gpu_id 0
