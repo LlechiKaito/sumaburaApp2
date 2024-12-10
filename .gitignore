@@ -1,0 +1,10 @@
+package/
+Document/
+# inputディレクトリ内のすべてのディレクトリを無視
+input/*/
+
+# ただし、stageディレクトリは無視しない
+!input/images/stage/
+
+# outputディレクトリ内のすべてのディレクトリを無視
+output/*/
