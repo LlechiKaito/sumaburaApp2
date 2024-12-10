@@ -13,3 +13,6 @@ output/videos/*
 
 # outputディレクトリ内のすべてのディレクトリを無視
 output/*
+
+src/sam2/segment_anything_2/sam2/sam2_hiera_b+.yaml
+src/sam2/segment_anything_2/sam2/sam2_hiera_b+.yaml
