@@ -37,6 +37,7 @@
   pip install -e .</br>
   cd checkpoints</br>
   sh download_ckpts.sh</br>
+  上記が実行できないならこれで解決するかも→dos2unix download_ckpts.sh</br>
   cd ../../pytorch-yolov3</br>
   pip install -r requirements.txt</br>
   cd ..</br>
