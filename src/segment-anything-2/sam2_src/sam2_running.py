@@ -48,7 +48,7 @@ def show_points(coords, labels, ax, marker_size=375):
 
 # 動画のパス設定
 input_img_dir = "../../input/images/jabDa_0/resize"
-output_img_dir = "../../output/images/jabDa_0"
+output_img_dir = "../../output/images/jabDa_0/mask_image"
 output_video_path = "../../output/videoes/jabDa_0_result.mp4" # 出力の動画ファイルパス
 
 # 出力ディレクトリが存在しない場合は作成
