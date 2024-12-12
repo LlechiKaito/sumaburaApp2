@@ -10,6 +10,7 @@ class Annotation:
     def __init__(self, directory_input_path, directory_output_path, waza_list):
         self.directory_input_path = directory_input_path
         self.directory_output_path = directory_output_path
+        os.makedirs(self.directory_input_path, exist_ok=True)
         os.makedirs(self.directory_output_path, exist_ok=True)
 
         self.image_names = os.listdir(self.directory_input_path)
@@ -56,7 +57,42 @@ class Annotation:
             file.write(txt_content)
             file.write("\n")
     
+    def remove_small_objects(self, num_labels_max=2):
+        for image_name in self.image_names:
+            # 画像を読み込む
+            img = cv2.imread(os.path.join(self.directory_input_path, image_name))
+            
+            while True:
+                gray_image = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+                # 2値化 (黒の範囲を調整: 閾値を10に設定)
+                _, binary = cv2.threshold(gray_image, 10, 255, cv2.THRESH_BINARY)
+                
+                # ラベリング処理
+                num_labels, labels, stats, centroids = cv2.connectedComponentsWithStats(binary, connectivity=4)
+                
+                if num_labels <= num_labels_max:
+                    break
+
+                # statsの5次元目(面積)を取得
+                areas = stats[:, 4]
+                
+                # 面積の降順でインデックスを取得
+                sorted_indices = np.argsort(areas)[::-1]
+                
+                # 背景(最大)と2番目の領域以外を黒(0)にするマスクを作成
+                mask = np.zeros_like(labels, dtype=np.uint8)
+                # 背景と最大オブジェクトのみ255に設定
+                mask[labels == sorted_indices[0]] = 255  # 背景
+                mask[labels == sorted_indices[1]] = 255  # 最大オブジェクト
+                    
+                # マスクを適用して結果を保存
+                img = cv2.bitwise_and(img, img, mask=mask)
+
+            cv2.imwrite(os.path.join(self.directory_input_path, image_name), img)
+    
     def annotation_main(self):
+
         if self.waza_list[-1][1] != len(self.image_names):
             print("技名のフレーム数と画像のフレーム数が一致しません")
             return
