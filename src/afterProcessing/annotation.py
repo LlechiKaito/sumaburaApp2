@@ -46,14 +46,14 @@ class Annotation:
         print(f"x座標の最大値: {max_x}")
 
         print('技名', min_x, min_y, max_x, max_y)
-        # self.txt_contents[frame_idx] = f"{self.txt_contents[frame_idx]} {min_x} {min_y} {max_x} {max_y}"
+        self.txt_contents[frame_idx] = f"{self.txt_contents[frame_idx]} {min_x} {min_y} {max_x} {max_y}"
 
     def get_annotation_waza(self, waza_name):
         self.txt_contents = np.append(self.txt_contents, waza_name)
         print(self.txt_contents)
     
     def save_txt(self, image_name, txt_content):
-        with open(os.path.join(self.directory_output_path, f"{image_name}.txt"), "w") as file:
+        with open(os.path.join(self.directory_output_path, f"{image_name.replace('.jpeg','')}.txt"), "w") as file:
             file.write(txt_content)
             file.write("\n")
     
@@ -90,20 +90,20 @@ class Annotation:
                 img = cv2.bitwise_and(img, img, mask=mask)
 
             cv2.imwrite(os.path.join(self.directory_input_path, image_name), img)
+            print(f"マスクを適用した画像を {os.path.join(self.directory_input_path, image_name)} に保存しました")
     
     def annotation_main(self):
 
-        if self.waza_list[-1][1] != len(self.image_names):
+        if int(self.waza_list[-1][1]) != int(len(self.image_names) - 1):
             print("技名のフレーム数と画像のフレーム数が一致しません")
             return
 
         waza_idx = 0
         for i, image_name in enumerate(self.image_names):
-            if i <= self.waza_list[waza_idx][1]:
-                self.get_annotation_waza(self.waza_list[waza_idx][0])
-            else:
+            if i > int(self.waza_list[waza_idx][1]):
                 waza_idx += 1
-                self.get_annotation_waza(self.waza_list[waza_idx][0])
+    
+            self.get_annotation_waza(self.waza_list[waza_idx][0])
             self.get_annotation_area(image_name, i)
             self.save_txt(image_name, self.txt_contents[i])
         
