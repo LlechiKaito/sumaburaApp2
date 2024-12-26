@@ -47,9 +47,9 @@ def show_points(coords, labels, ax, marker_size=375):
     ax.scatter(neg_points[:, 0], neg_points[:, 1], color='red', marker='*', s=marker_size, edgecolor='white', linewidth=1.25)
 
 # 動画のパス設定
-input_img_dir = "../../input/images/jabDa_0/resize"
-output_img_dir = "../../output/images/jabDa_0"
-output_video_path = "../../output/jabDa_0_result.mp4" # 出力の動画ファイルパス
+input_img_dir = "../../input/images/Up-B_0/resize"
+output_img_dir = "../../output/images/Up-B_0/only_mask"
+output_video_path = "../../output/Up-B_0_result.mp4" # 出力の動画ファイルパス
 
 # 出力ディレクトリが存在しない場合は作成
 os.makedirs(output_img_dir, exist_ok=True) 
@@ -73,8 +73,8 @@ inference_state = predictor.init_state(video_path=input_img_dir)
 ann_frame_idx = 0
 ann_obj_id = 1
 # ここの値によってマスク化される(sam2_pre_running.pyで値を確認する)
-input_point = np.array([[111, 270]], dtype=np.float16)
-input_label = np.array([1], np.int16)
+input_point = np.array([[135, 239], [116, 277]], dtype=np.float16)
+input_label = np.array([1, 1], np.int16)
 
 ## 指定したフレームに対する入力プロンプトのセグメンテーションを計算
 _, out_obj_ids, out_mask_logits = predictor.add_new_points(

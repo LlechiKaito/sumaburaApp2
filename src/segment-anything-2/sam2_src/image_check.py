@@ -8,7 +8,7 @@ matplotlib.use('TkAgg')  # または 'Qt5Agg' など
 import matplotlib.pyplot as plt
 
 # 画像のパス設定
-input_img_dir = "../../input/images/jabDa_0/resize"
+input_img_dir = "../../input/images/Up-B_0/resize"
 
 # 動画の最初のフレームを取得
 frame_names = natsorted(glob(f"{input_img_dir}/*.jpeg"))
