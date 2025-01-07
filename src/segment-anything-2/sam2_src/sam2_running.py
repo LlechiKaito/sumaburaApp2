@@ -177,15 +177,15 @@ def run_sam2(input_img_dir, output_img_dir, output_video_path, input_point, inpu
 
 # run_sam2(input_img_dir, output_img_dir, output_video_path, input_point, input_label)
 
-# # 動画のパス設定
-# input_img_dir = "../../input/images/D-smash_0/resize"
-# output_img_dir = "../../output/images/D-smash_0/only_mask"
-# output_video_path = "../../output/D-smash_0_result.mp4" # 出力の動画ファイルパス
-# # ここの値によってマスク化される(sam2_pre_running.pyで値を確認する)
-# input_point = np.array([[113, 270], [141, 239]], dtype=np.float16)
-# input_label = np.array([1, 1], np.int16)
+# 動画のパス設定
+input_img_dir = "../../input/images/D-smash_0/resize"
+output_img_dir = "../../output/images/D-smash_0/only_mask"
+output_video_path = "../../output/D-smash_0_result.mp4" # 出力の動画ファイルパス
+# ここの値によってマスク化される(sam2_pre_running.pyで値を確認する)
+input_point = np.array([[113, 270], [141, 239]], dtype=np.float16)
+input_label = np.array([1, 1], np.int16)
 
-# run_sam2(input_img_dir, output_img_dir, output_video_path, input_point, input_label)
+run_sam2(input_img_dir, output_img_dir, output_video_path, input_point, input_label)
 
 # # 動画のパス設定
 # input_img_dir = "../../input/images/D-throw_0/resize"
@@ -307,15 +307,15 @@ def run_sam2(input_img_dir, output_img_dir, output_video_path, input_point, inpu
 
 # run_sam2(input_img_dir, output_img_dir, output_video_path, input_point, input_label)
 
-# 動画のパス設定
-input_img_dir = "../../input/images/Side-B_0/resize"
-output_img_dir = "../../output/images/Side-B_0/only_mask"
-output_video_path = "../../output/Side-B_0_result.mp4" # 出力の動画ファイルパス
-# ここの値によってマスク化される(sam2_pre_running.pyで値を確認する)
-input_point = np.array([[125, 240], [111, 274]], dtype=np.float16)
-input_label = np.array([1, 1], np.int16)
+# # 動画のパス設定
+# input_img_dir = "../../input/images/Side-B_0/resize"
+# output_img_dir = "../../output/images/Side-B_0/only_mask"
+# output_video_path = "../../output/Side-B_0_result.mp4" # 出力の動画ファイルパス
+# # ここの値によってマスク化される(sam2_pre_running.pyで値を確認する)
+# input_point = np.array([[125, 240], [111, 274]], dtype=np.float16)
+# input_label = np.array([1, 1], np.int16)
 
-run_sam2(input_img_dir, output_img_dir, output_video_path, input_point, input_label)
+# run_sam2(input_img_dir, output_img_dir, output_video_path, input_point, input_label)
 
 # # 動画のパス設定
 # input_img_dir = "../../input/images/U-air_0/resize"
@@ -327,42 +327,42 @@ run_sam2(input_img_dir, output_img_dir, output_video_path, input_point, input_la
 
 # run_sam2(input_img_dir, output_img_dir, output_video_path, input_point, input_label)
 
-# 動画のパス設定
-input_img_dir = "../../input/images/U-smash_0/resize"
-output_img_dir = "../../output/images/U-smash_0/only_mask"
-output_video_path = "../../output/U-smash_0_result.mp4" # 出力の動画ファイルパス
-# ここの値によってマスク化される(sam2_pre_running.pyで値を確認する)
-input_point = np.array([[134, 232], [113, 265]], dtype=np.float16)
-input_label = np.array([1, 1], np.int16)
+# # 動画のパス設定
+# input_img_dir = "../../input/images/U-smash_0/resize"
+# output_img_dir = "../../output/images/U-smash_0/only_mask"
+# output_video_path = "../../output/U-smash_0_result.mp4" # 出力の動画ファイルパス
+# # ここの値によってマスク化される(sam2_pre_running.pyで値を確認する)
+# input_point = np.array([[134, 232], [113, 265]], dtype=np.float16)
+# input_label = np.array([1, 1], np.int16)
 
-run_sam2(input_img_dir, output_img_dir, output_video_path, input_point, input_label)
+# run_sam2(input_img_dir, output_img_dir, output_video_path, input_point, input_label)
 
-# 動画のパス設定
-input_img_dir = "../../input/images/U-throw_0/resize"
-output_img_dir = "../../output/images/U-throw_0/only_mask"
-output_video_path = "../../output/U-throw_0_result.mp4" # 出力の動画ファイルパス
-# ここの値によってマスク化される(sam2_pre_running.pyで値を確認する)
-input_point = np.array([[325, 225], [285, 296]], dtype=np.float16)
-input_label = np.array([1, 1], np.int16)
+# # 動画のパス設定
+# input_img_dir = "../../input/images/U-throw_0/resize"
+# output_img_dir = "../../output/images/U-throw_0/only_mask"
+# output_video_path = "../../output/U-throw_0_result.mp4" # 出力の動画ファイルパス
+# # ここの値によってマスク化される(sam2_pre_running.pyで値を確認する)
+# input_point = np.array([[325, 225], [285, 296]], dtype=np.float16)
+# input_label = np.array([1, 1], np.int16)
 
-run_sam2(input_img_dir, output_img_dir, output_video_path, input_point, input_label)
+# run_sam2(input_img_dir, output_img_dir, output_video_path, input_point, input_label)
 
-# 動画のパス設定
-input_img_dir = "../../input/images/U-tilt_0/resize"
-output_img_dir = "../../output/images/U-tilt_0/only_mask"
-output_video_path = "../../output/U-tilt_0_result.mp4" # 出力の動画ファイルパス
-# ここの値によってマスク化される(sam2_pre_running.pyで値を確認する)
-input_point = np.array([[130, 242], [109, 269]], dtype=np.float16)
-input_label = np.array([1, 1], np.int16)
+# # 動画のパス設定
+# input_img_dir = "../../input/images/U-tilt_0/resize"
+# output_img_dir = "../../output/images/U-tilt_0/only_mask"
+# output_video_path = "../../output/U-tilt_0_result.mp4" # 出力の動画ファイルパス
+# # ここの値によってマスク化される(sam2_pre_running.pyで値を確認する)
+# input_point = np.array([[130, 242], [109, 269]], dtype=np.float16)
+# input_label = np.array([1, 1], np.int16)
 
-run_sam2(input_img_dir, output_img_dir, output_video_path, input_point, input_label)
+# run_sam2(input_img_dir, output_img_dir, output_video_path, input_point, input_label)
 
-# 動画のパス設定
-input_img_dir = "../../input/images/Up-B_0/resize"
-output_img_dir = "../../output/images/Up-B_0/only_mask"
-output_video_path = "../../output/Up-B_0_result.mp4" # 出力の動画ファイルパス
-# ここの値によってマスク化される(sam2_pre_running.pyで値を確認する)
-input_point = np.array([[135, 239], [116, 277]], dtype=np.float16)
-input_label = np.array([1, 1], np.int16)
+# # 動画のパス設定
+# input_img_dir = "../../input/images/Up-B_0/resize"
+# output_img_dir = "../../output/images/Up-B_0/only_mask"
+# output_video_path = "../../output/Up-B_0_result.mp4" # 出力の動画ファイルパス
+# # ここの値によってマスク化される(sam2_pre_running.pyで値を確認する)
+# input_point = np.array([[135, 239], [116, 277]], dtype=np.float16)
+# input_label = np.array([1, 1], np.int16)
 
-run_sam2(input_img_dir, output_img_dir, output_video_path, input_point, input_label)
+# run_sam2(input_img_dir, output_img_dir, output_video_path, input_point, input_label)

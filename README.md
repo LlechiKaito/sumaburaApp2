@@ -39,6 +39,7 @@
   sh download_ckpts.sh</br>
   上記が実行できないならこれで解決するかも→dos2unix download_ckpts.sh</br>
   cd ../../pytorch-yolov3</br>
+  wget https://pjreddie.com/media/files/darknet53.conv.74</br>
   pip install -r requirements.txt</br>
   cd ..</br>
   pip install pandas</br>
