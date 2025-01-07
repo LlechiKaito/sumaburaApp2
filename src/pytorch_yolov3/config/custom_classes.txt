@@ -1,10 +1,8 @@
 Jab1
 Jab2
-Jab3
 notwaza
 B-air
 D-air
-D-smash
 D-tilt
 DA
 Down-B
