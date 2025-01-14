@@ -618,3 +618,8 @@ annotation.annotation_main()
 # backgroundChange = BackgroundChange("../../output/images/jabDa_0/mask_image", "../../input/images/stage/resize", "../../output/images/jabDa_0/senjou")
 
 # backgroundChange.run()
+
+from combination import Combination
+
+combination = Combination("../../output/images/test", "../../input/images/test", "../../output/images/test/result.jpeg")
+combination.combine_images()
