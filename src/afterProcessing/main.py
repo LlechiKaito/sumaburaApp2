@@ -896,3 +896,144 @@ annotation.annotation_main_test()
 # backgroundChange = BackgroundChange("../../output/images/Up-B_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/Up-B_0/senjou")
 # backgroundChange.run()
 
+# リサイズ
+resize = Resize("../../input/images/U-air_0/resize", "../../input/images/U-air_0/resize2")
+resize.resize()
+resize = Resize("../../output/images/U-air_0/only_mask", "../../output/images/U-air_0/only_mask_resize")
+resize.resize()
+
+# テストしてないので，よろしく
+waza_list = np.array([['notwaza', 200], ['U-air', 232], ['notwaza', 382], 
+                      ['U-air', 414], ['notwaza', 570], ['U-air', 602],
+                      ['notwaza', 702], ['U-air', 734], ['notwaza', 926],
+                      ['U-air', 958], ['notwaza', 1108], ['U-air', 1140],
+                      ['notwaza', 1294], ['U-air', 1326], ['notwaza', 1498],
+                      ['U-air', 1532], ['notwaza', 1654], ['U-air', 1664],
+                      ['notwaza', 1810], ['U-air', 1844], ['notwaza', 1992],
+                      ['U-air', 2026], ['notwaza', 2214], ['U-air', 2248],
+                      ['notwaza', 2404], ['U-air', 2438], ['notwaza', 2538],
+                      ['U-air', 2572], ['notwaza', 2754], ['U-air', 2786],
+                      ['notwaza', 2930], ['U-air', 2964], ['notwaza', 3128],
+                      ['U-air', 3162], ['notwaza', 3288], ['U-air', 3322],
+                      ['notwaza', 3472], ['U-air', 3506], ['notwaza', 3604],
+                      ['U-air', 3638], ['notwaza', 3820]
+                    ])  
+
+annotation = Annotation("../../output/images/U-air_0/only_mask_resize", "../../output/texts/U-air_0/", waza_list)
+annotation.remove_small_objects()
+annotation.annotation_main()
+
+# リサイズ
+resize = Resize("../../input/images/U-smash_0/resize", "../../input/images/U-smash_0/resize2")
+resize.resize()
+resize = Resize("../../output/images/U-smash_0/only_mask", "../../output/images/U-smash_0/only_mask_resize")
+resize.resize()
+
+# テストしてないので，よろしく
+waza_list = np.array([['notwaza', 213], ['U-smash', 265], ['notwaza', 385], 
+                      ['U-smash', 437], ['notwaza', 573], ['U-smash', 625],
+                      ['notwaza', 743], ['U-smash', 795], ['notwaza', 929],
+                      ['U-smash', 981], ['notwaza', 1113], ['U-smash', 1165],
+                      ['notwaza', 1295], ['U-smash', 1347], ['notwaza', 1473],
+                      ['U-smash', 1525], ['notwaza', 1657], ['U-smash', 1703],
+                      ['notwaza', 1831], ['U-smash', 1879], ['notwaza', 2021],
+                      ['U-smash', 2073], ['notwaza', 2203], ['U-smash', 2249],
+                      ['notwaza', 2387], ['U-smash', 2439], ['notwaza', 2563],
+                      ['U-smash', 2617], ['notwaza', 2753], ['U-smash', 2805],
+                      ['notwaza', 2937], ['U-smash', 2985], ['notwaza', 3111],
+                      ['U-smash', 3163], ['notwaza', 3283], ['U-smash', 3335],
+                      ['notwaza', 3465], ['U-smash', 3517], ['notwaza', 3629],
+                      ['U-smash', 3681], ['notwaza', 3825]
+                    ])  
+
+annotation = Annotation("../../output/images/U-smash_0/only_mask_resize", "../../output/texts/U-smash_0/", waza_list)
+annotation.remove_small_objects()
+annotation.annotation_main()
+
+# リサイズ
+resize = Resize("../../input/images/U-throw_0/resize", "../../input/images/U-throw_0/resize2")
+resize.resize()
+resize = Resize("../../output/images/U-throw_0/only_mask", "../../output/images/U-throw_0/only_mask_resize")
+resize.resize()
+
+# テストしてないので，よろしく(Grab-blowの中にGrab的な要素があるから調整しないといけんかも)
+waza_list = np.array([['notwaza', 233], ['Grab', 267], ['Grab-blow', 349], 
+                      ['notwaza', 465], ['Grab', 479], ['Grab-blow', 589], 
+                      ['notwaza', 681], ['Grab', 695], ['Grab-blow', 809], 
+                      ['notwaza', 837], ['Grab', 875], ['notwaza', 885], ['Grab', 899], ['Grab-blow', 1027],
+                      ['notwaza', 1016], ['Grab', 1036], ['Grab-blow', 1062],
+                      ['notwaza', 1135], ['Grab', 1151], ['Grab-blow', 1289],
+                      ['notwaza', 1419], ['Grab', 1433], ['Grab-blow', 1591],
+                      ['notwaza', 1759], ['Grab', 1775], ['Grab-blow', 1967],
+                      ['notwaza', 2171], ['Grab', 2187], ['Grab-blow', 2403],
+                      ['notwaza', 2553], ['Grab', 2567], ['Grab-blow', 2809],
+                      ['notwaza', 2939], ['Grab', 2953], ['Grab-blow', 3217],
+                      ['notwaza', 3347], ['Grab', 3363], ['Grab-blow', 3659],
+                      ['notwaza', 3940]
+                    ])
+
+annotation = Annotation("../../output/images/U-throw_0/only_mask_resize", "../../output/texts/U-throw_0/", waza_list)
+annotation.remove_small_objects()
+annotation.annotation_main()
+
+# リサイズ
+resize = Resize("../../input/images/U-tilt_0/resize", "../../input/images/U-tilt_0/resize2")
+resize.resize()
+resize = Resize("../../output/images/U-tilt_0/only_mask", "../../output/images/U-tilt_0/only_mask_resize")
+resize.resize()
+
+waza_list = np.array([['notwaza', 224], ['U-tilt', 272], ['notwaza', 390], 
+                      ['U-tilt', 438], ['notwaza', 590], ['U-tilt', 638],
+                      ['notwaza', 774], ['U-tilt', 822], ['notwaza', 956],
+                      ['U-tilt', 1004], ['notwaza', 1140], ['U-tilt', 1188],
+                      ['notwaza', 1322], ['U-tilt', 1356], ['notwaza', 1498],
+                      ['U-tilt', 1546], ['notwaza', 1686], ['U-tilt', 1734],
+                      ['notwaza', 1866], ['U-tilt', 1914], ['notwaza', 2034],
+                      ['U-tilt', 2082], ['notwaza', 2234], ['U-tilt', 2282],
+                      ['notwaza', 2416], ['U-tilt', 2464], ['notwaza', 2586],
+                      ['U-tilt', 2634], ['notwaza', 2762], ['U-tilt', 2810],
+                      ['notwaza', 2956], ['U-tilt', 2986], ['notwaza', 3112],
+                      ['U-tilt', 3160], ['notwaza', 3290], ['U-tilt', 3338],
+                      ['notwaza', 3474], ['U-tilt', 3522], ['notwaza', 3664],
+                      ['U-tilt', 3712], ['notwaza', 3845]
+                    ])  
+
+annotation = Annotation("../../output/images/U-tilt_0/only_mask_resize", "../../output/texts/U-tilt_0/", waza_list)
+annotation.remove_small_objects()
+annotation.annotation_main()
+
+# リサイズ
+resize = Resize("../../input/images/Up-B_0/resize", "../../input/images/Up-B_0/resize2")
+resize.resize()
+resize = Resize("../../output/images/Up-B_0/only_mask", "../../output/images/Up-B_0/only_mask_resize")
+resize.resize()
+
+waza_list = np.array([['notwaza', 223], ['Up-B', 271], ['notwaza', 409], 
+                      ['Up-B', 457], ['notwaza', 593], ['Up-B', 640],
+                      ['notwaza', 750], ['Up-B', 799], ['notwaza', 933],
+                      ['Up-B', 981], ['notwaza', 1135], ['Up-B', 1183],
+                      ['notwaza', 1331], ['Up-B', 1379], ['notwaza', 1500],
+                      ['Up-B', 1549], ['notwaza', 1691], ['Up-B', 1739],
+                      ['notwaza', 1861], ['Up-B', 1909], ['notwaza', 2043],
+                      ['Up-B', 2091], ['notwaza', 2227], ['Up-B', 2277],
+                      ['notwaza', 2371], ['Up-B', 2415], ['notwaza', 2483],
+                      ['Up-B', 2531], ['notwaza', 2595], ['Up-B', 2641],
+                      ['notwaza', 2773], ['Up-B', 2821], ['notwaza', 2925],
+                      ['Up-B', 2973], ['notwaza', 3113], ['Up-B', 3161],
+                      ['notwaza', 3313], ['Up-B', 3361], ['notwaza', 3475],
+                      ['Up-B', 3521], ['notwaza', 3615], ['Up-B', 3661],
+                      ['notwaza', 3859]
+                    ])  
+
+annotation = Annotation("../../output/images/Up-B_0/only_mask_resize", "../../output/texts/Up-B_0/", waza_list)
+annotation.remove_small_objects()
+annotation.annotation_main()
+
+# backgroundChange = BackgroundChange("../../output/images/jabDa_0/mask_image", "../../input/images/stage/resize", "../../output/images/jabDa_0/senjou")
+
+# backgroundChange.run()
+
+from combination import Combination
+
+combination = Combination("../../output/images/test", "../../input/images/test", "../../output/images/test/result.jpeg")
+combination.combine_images()
