@@ -25,6 +25,6 @@ augmentation:
   jitter: 0.3
 test:
   batch_size: 32
-  conf_threshold: 0.1
+  conf_threshold: 0.5
   nms_threshold: 0.45
   img_size: 608

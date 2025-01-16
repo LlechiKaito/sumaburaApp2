@@ -112,5 +112,14 @@ class Annotation:
             
                     self.get_annotation_area(image_name, i)
                     self.save_txt(image_name, self.txt_contents[i])
+    
+    def annotation_main_test(self):
+        waza_idx = 0
+        for i, image_name in enumerate(self.image_names):
+            if i > int(self.waza_list[waza_idx][1]):
+                waza_idx += 1
+            self.get_annotation_waza(self.waza_list[waza_idx][0])
+            self.txt_contents[i] = f"{self.txt_contents[i]} 0 0 0 0"
+            self.save_txt(image_name, self.txt_contents[i])
         
 # コードの説明を書く予定
