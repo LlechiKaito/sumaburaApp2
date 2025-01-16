@@ -23,3 +23,62 @@ U-air: 640枚
 U-smash: 1022枚
 U-tilt: 928枚
 Up-B: 1001枚
+
+test
+クラスごとの画像数:
+Notwaza: 2000枚
+N-air: 113枚
+U-air: 58枚
+F-air: 75枚
+B-air: 75枚
+D-air: 83枚
+Up-B: 96枚
+Side-B: 196枚
+Down-B: 155枚
+NB: 124枚
+Grab: 424枚
+Grab-blow: 80枚
+U-throw: 80枚
+B-throw: 62枚
+F-throw: 52枚
+D-throw: 76枚
+U-smash: 102枚
+F-smash: 116枚
+D-smash: 118枚
+DA: 86枚
+Jab1: 24枚
+Jab2: 74枚
+U-tilt: 96枚
+F-tilt: 88枚
+D-tilt: 84枚
+
+test(senjou)
+クラスごとの画像数:
+Notwaza: 2000枚
+N-air: 74枚
+U_air: 32枚
+B-air: 78枚
+F-air: 81枚
+D-air: 80枚
+U-air: 30枚
+NB: 125枚
+Up-B: 96枚
+Down-B: 147枚
+Side-B: 212枚
+Grab: 253枚
+D-throw: 74枚
+U-throw: 98枚
+Grab-blow: 308枚
+F-throw: 52枚
+B-throw: 59枚
+U-smash: 100枚
+F-smash: 116枚
+D-smash: 121枚
+DA: 82枚
+Jab1: 22枚
+Jab2: 76枚
+
+省いたやつ
+Grab_01163.png
+Notwaza_08336.png
+Notwaza_test_1012.png

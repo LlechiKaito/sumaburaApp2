@@ -41,7 +41,9 @@ def draw_boxes(img, boxes, n_classes):
         draw.rectangle((x1, y1, x2, y2), outline=color, width=3)
 
         # ラベルを描画する。
-        text_size = draw.textsize(caption, font=font)
+        # text_size = draw.textsize(caption, font=font)
+        text_bbox = draw.textbbox((0, 0), caption, font=font)  # 新コード
+        text_size = (text_bbox[2] - text_bbox[0], text_bbox[3] - text_bbox[1])  # テキストサイズを計算  
         text_origin = np.array([x1, y1])
         text_color = get_text_color(color)
 

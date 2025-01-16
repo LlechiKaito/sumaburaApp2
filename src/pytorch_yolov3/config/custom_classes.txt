@@ -1,6 +1,6 @@
 Jab1
 Jab2
-notwaza
+Notwaza
 B-air
 D-air
 D-tilt
