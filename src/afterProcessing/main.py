@@ -736,165 +736,165 @@ from resize import Resize
 
 # 戦場のテストデータの作成
 
-# リサイズ
-resize = Resize("../../input/images/air_senjou_test_0/resize", "../../input/images/air_senjou_test_0/resize2")
-resize.resize()
+# # リサイズ
+# resize = Resize("../../input/images/air_senjou_test_0/resize", "../../input/images/air_senjou_test_0/resize2")
+# resize.resize()
 
-waza_list = np.array([['Notwaza', 122], ['N-air', 158], ['Notwaza', 207], 
-                      ['U_air', 239], ['Notwaza', 275], ['B-air', 313],
-                      ['Notwaza', 363], ['F-air', 406], ['Notwaza', 447],
-                      ['D-air', 487], ['Notwaza', 597], ['U-air', 627],
-                      ['Notwaza', 665], ['N-air', 703], ['Notwaza', 751],
-                      ['F-air', 789], ['Notwaza', 835], ['B-air', 875],
-                      ['Notwaza', 909], ['D-air', 949], ['Notwaza', 1033]
-                    ])
+# waza_list = np.array([['Notwaza', 122], ['N-air', 158], ['Notwaza', 207], 
+#                       ['U-air', 239], ['Notwaza', 275], ['B-air', 313],
+#                       ['Notwaza', 363], ['F-air', 406], ['Notwaza', 447],
+#                       ['D-air', 487], ['Notwaza', 597], ['U-air', 627],
+#                       ['Notwaza', 665], ['N-air', 703], ['Notwaza', 751],
+#                       ['F-air', 789], ['Notwaza', 835], ['B-air', 875],
+#                       ['Notwaza', 909], ['D-air', 949], ['Notwaza', 1033]
+#                     ])
 
-annotation = Annotation("../../input/images/air_senjou_test_0/resize2", "../../output/texts/air_senjou_test_0/", waza_list)
-annotation.annotation_main_test()
+# annotation = Annotation("../../input/images/air_senjou_test_0/resize2", "../../output/texts/air_senjou_test_0/", waza_list)
+# annotation.annotation_main_test()
 
-# リサイズ
-resize = Resize("../../input/images/b_senjou_test_0/resize", "../../input/images/b_senjou_test_0/resize2")
-resize.resize()
+# # リサイズ
+# resize = Resize("../../input/images/b_senjou_test_0/resize", "../../input/images/b_senjou_test_0/resize2")
+# resize.resize()
 
-waza_list = np.array([['Notwaza', 103], ['NB', 147], ['Notwaza', 167], 
-                      ['Up-B', 215], ['Notwaza', 241], ['Down-B', 314],
-                      ['Notwaza', 345], ['Side-B', 445], ['Notwaza', 499],
-                      ['NB', 539], ['Notwaza', 561], ['NB', 602],
-                      ['Notwaza', 613], ['Up-B', 661], ['Notwaza', 677],
-                      ['Down-B', 751], ['Notwaza', 761], ['Side-B', 873],
-                      ['Notwaza', 930]
-                    ])
+# waza_list = np.array([['Notwaza', 103], ['NB', 147], ['Notwaza', 167], 
+#                       ['Up-B', 215], ['Notwaza', 241], ['Down-B', 314],
+#                       ['Notwaza', 345], ['Side-B', 445], ['Notwaza', 499],
+#                       ['NB', 539], ['Notwaza', 561], ['NB', 602],
+#                       ['Notwaza', 613], ['Up-B', 661], ['Notwaza', 677],
+#                       ['Down-B', 751], ['Notwaza', 761], ['Side-B', 873],
+#                       ['Notwaza', 930]
+#                     ])
 
-annotation = Annotation("../../input/images/b_senjou_test_0/resize2", "../../output/texts/b_senjou_test_0/", waza_list)
-annotation.annotation_main_test()
+# annotation = Annotation("../../input/images/b_senjou_test_0/resize2", "../../output/texts/b_senjou_test_0/", waza_list)
+# annotation.annotation_main_test()
 
-# リサイズ
-resize = Resize("../../input/images/smash_senjou_test_0/resize", "../../input/images/smash_senjou_test_0/resize2")
-resize.resize()
+# # リサイズ
+# resize = Resize("../../input/images/smash_senjou_test_0/resize", "../../input/images/smash_senjou_test_0/resize2")
+# resize.resize()
 
-waza_list = np.array([['Notwaza', 125], ['U-smash', 175], ['Notwaza', 201], 
-                      ['F-smash', 259], ['Notwaza', 281], ['D-smash', 339],
-                      ['Notwaza', 391], ['U-smash', 441], ['Notwaza', 449],
-                      ['F-smash', 507], ['Notwaza', 515], ['D-smash', 578],
-                      ['Notwaza', 641]
-                    ])
+# waza_list = np.array([['Notwaza', 125], ['U-smash', 175], ['Notwaza', 201], 
+#                       ['F-smash', 259], ['Notwaza', 281], ['D-smash', 339],
+#                       ['Notwaza', 391], ['U-smash', 441], ['Notwaza', 449],
+#                       ['F-smash', 507], ['Notwaza', 515], ['D-smash', 578],
+#                       ['Notwaza', 641]
+#                     ])
 
-annotation = Annotation("../../input/images/smash_senjou_test_0/resize2", "../../output/texts/smash_senjou_test_0/", waza_list)
-annotation.annotation_main_test()
+# annotation = Annotation("../../input/images/smash_senjou_test_0/resize2", "../../output/texts/smash_senjou_test_0/", waza_list)
+# annotation.annotation_main_test()
 
-# リサイズ
-resize = Resize("../../input/images/tilt_senjou_test_0/resize", "../../input/images/tilt_senjou_test_0/resize2")
-resize.resize()
+# # リサイズ
+# resize = Resize("../../input/images/tilt_senjou_test_0/resize", "../../input/images/tilt_senjou_test_0/resize2")
+# resize.resize()
 
-waza_list = np.array([['Notwaza', 152], ['U-tilt', 201], ['Notwaza', 227], 
-                      ['F-tilt', 268], ['Notwaza', 286], ['D-tilt', 326],
-                      ['Notwaza', 398], ['U-tilt', 444], ['Notwaza', 454],
-                      ['F-tilt', 498], ['Notwaza', 514], ['D-tilt', 554],
-                      ['Notwaza', 590]
-                    ])
+# waza_list = np.array([['Notwaza', 152], ['U-tilt', 201], ['Notwaza', 227], 
+#                       ['F-tilt', 268], ['Notwaza', 286], ['D-tilt', 326],
+#                       ['Notwaza', 398], ['U-tilt', 444], ['Notwaza', 454],
+#                       ['F-tilt', 498], ['Notwaza', 514], ['D-tilt', 554],
+#                       ['Notwaza', 590]
+#                     ])
 
-annotation = Annotation("../../input/images/tilt_senjou_test_0/resize2", "../../output/texts/tilt_senjou_test_0/", waza_list)
-annotation.annotation_main_test()
+# annotation = Annotation("../../input/images/tilt_senjou_test_0/resize2", "../../output/texts/tilt_senjou_test_0/", waza_list)
+# annotation.annotation_main_test()
 
-# リサイズ
-resize = Resize("../../input/images/jabDa_senjou_test_0/resize", "../../input/images/jabDa_senjou_test_0/resize2")
-resize.resize()
+# # リサイズ
+# resize = Resize("../../input/images/jabDa_senjou_test_0/resize", "../../input/images/jabDa_senjou_test_0/resize2")
+# resize.resize()
 
-waza_list = np.array([['Notwaza', 110], ['DA', 152], ['Notwaza', 184], 
-                      ['DA', 224], ['Notwaza', 266], ['Jab1', 278],
-                      ['Jab2', 314], ['Notwaza', 332], ['Jab1', 342],
-                      ['Jab2', 382], ['Notwaza', 434]
-                    ])
+# waza_list = np.array([['Notwaza', 110], ['DA', 152], ['Notwaza', 184], 
+#                       ['DA', 224], ['Notwaza', 266], ['Jab1', 278],
+#                       ['Jab2', 314], ['Notwaza', 332], ['Jab1', 342],
+#                       ['Jab2', 382], ['Notwaza', 434]
+#                     ])
 
-annotation = Annotation("../../input/images/jabDa_senjou_test_0/resize2", "../../output/texts/jabDa_senjou_test_0/", waza_list)
-annotation.annotation_main_test()
+# annotation = Annotation("../../input/images/jabDa_senjou_test_0/resize2", "../../output/texts/jabDa_senjou_test_0/", waza_list)
+# annotation.annotation_main_test()
 
-# リサイズ
-resize = Resize("../../input/images/grab_senjou_test_0/resize", "../../input/images/grab_senjou_test_0/resize2")
-resize.resize()
+# # リサイズ
+# resize = Resize("../../input/images/grab_senjou_test_0/resize", "../../input/images/grab_senjou_test_0/resize2")
+# resize.resize()
 
-waza_list = np.array([['Notwaza', 128], ['Grab', 177], ['D-throw', 215], 
-                      ['Notwaza', 367], ['Grab', 406], ['U-throw', 455],
-                      ['Notwaza', 631], ['Grab', 660], ['U-throw', 709],
-                      ['Notwaza', 839], ['Grab', 863], ['D-throw', 899],
-                      ['Notwaza', 1053], ['Grab', 1067], ['Grab-blow', 1205],
-                      ['Notwaza', 1313], ['Grab', 1327], ['Grab-blow', 1477],
-                      ['Notwaza', 1657], ['Grab', 1687], ['F-throw', 1713],
-                      ['Notwaza', 1887], ['Grab', 1903], ['F-throw', 1929],
-                      ['Notwaza', 2070], ['Grab', 2092], ['B-throw', 2121],
-                      ['Notwaza', 2325], ['Grab', 2341], ['Grab-blow', 2361], ['B-throw', 2391],
-                      ['Notwaza', 2567]
-                    ])
+# waza_list = np.array([['Notwaza', 128], ['Grab', 177], ['D-throw', 215], 
+#                       ['Notwaza', 367], ['Grab', 406], ['U-throw', 455],
+#                       ['Notwaza', 631], ['Grab', 660], ['U-throw', 709],
+#                       ['Notwaza', 839], ['Grab', 863], ['D-throw', 899],
+#                       ['Notwaza', 1053], ['Grab', 1067], ['Grab-blow', 1205],
+#                       ['Notwaza', 1313], ['Grab', 1327], ['Grab-blow', 1477],
+#                       ['Notwaza', 1657], ['Grab', 1687], ['F-throw', 1713],
+#                       ['Notwaza', 1887], ['Grab', 1903], ['F-throw', 1929],
+#                       ['Notwaza', 2070], ['Grab', 2092], ['B-throw', 2121],
+#                       ['Notwaza', 2325], ['Grab', 2341], ['Grab-blow', 2361], ['B-throw', 2391],
+#                       ['Notwaza', 2567]
+#                     ])
 
-annotation = Annotation("../../input/images/grab_senjou_test_0/resize2", "../../output/texts/grab_senjou_test_0/", waza_list)
-annotation.annotation_main_test()
+# annotation = Annotation("../../input/images/grab_senjou_test_0/resize2", "../../output/texts/grab_senjou_test_0/", waza_list)
+# annotation.annotation_main_test()
 
-# backgroundChange = BackgroundChange("../../output/images/B-air_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/B-air_0/senjou")
-# # backgroundChange.stage_resize()
+backgroundChange = BackgroundChange("../../output/images/B-air_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/B-air_0/senjou")
+# backgroundChange.stage_resize()
+backgroundChange.run()
+
+backgroundChange = BackgroundChange("../../output/images/B-throw_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/B-throw_0/senjou")
+backgroundChange.run()
+
+backgroundChange = BackgroundChange("../../output/images/D-air_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/D-air_0/senjou")
+backgroundChange.run()
+
+# backgroundChange = BackgroundChange("../../output/images/D-smash_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/D-smash_0/senjou")
 # backgroundChange.run()
 
-# backgroundChange = BackgroundChange("../../output/images/B-throw_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/B-throw_0/senjou")
-# backgroundChange.run()
+backgroundChange = BackgroundChange("../../output/images/D-throw_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/D-throw_0/senjou")
+backgroundChange.run()
 
-# backgroundChange = BackgroundChange("../../output/images/D-air_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/D-air_0/senjou")
-# backgroundChange.run()
+backgroundChange = BackgroundChange("../../output/images/D-tilt_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/D-tilt_0/senjou")
+backgroundChange.run()
 
-# # backgroundChange = BackgroundChange("../../output/images/D-smash_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/D-smash_0/senjou")
-# # backgroundChange.run()
+backgroundChange = BackgroundChange("../../output/images/DA_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/DA_0/senjou")
+backgroundChange.run()
 
-# backgroundChange = BackgroundChange("../../output/images/D-throw_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/D-throw_0/senjou")
-# backgroundChange.run()
+backgroundChange = BackgroundChange("../../output/images/Down-B_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/Down-B_0/senjou")
+backgroundChange.run()  
 
-# backgroundChange = BackgroundChange("../../output/images/D-tilt_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/D-tilt_0/senjou")
-# backgroundChange.run()
+backgroundChange = BackgroundChange("../../output/images/F-air_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/F-air_0/senjou")
+backgroundChange.run()
 
-# backgroundChange = BackgroundChange("../../output/images/DA_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/DA_0/senjou")
-# backgroundChange.run()
+backgroundChange = BackgroundChange("../../output/images/F-smash_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/F-smash_0/senjou")
+backgroundChange.run()
 
-# backgroundChange = BackgroundChange("../../output/images/Down-B_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/Down-B_0/senjou")
-# backgroundChange.run()  
+backgroundChange = BackgroundChange("../../output/images/F-throw_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/F-throw_0/senjou")
+backgroundChange.run()
 
-# backgroundChange = BackgroundChange("../../output/images/F-air_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/F-air_0/senjou")
-# backgroundChange.run()
+backgroundChange = BackgroundChange("../../output/images/F-tilt_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/F-tilt_0/senjou")
+backgroundChange.run()
 
-# backgroundChange = BackgroundChange("../../output/images/F-smash_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/F-smash_0/senjou")
-# backgroundChange.run()
+backgroundChange = BackgroundChange("../../output/images/Grab-blow_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/Grab-blow_0/senjou")
+backgroundChange.run()
 
-# backgroundChange = BackgroundChange("../../output/images/F-throw_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/F-throw_0/senjou")
-# backgroundChange.run()
+backgroundChange = BackgroundChange("../../output/images/Jab_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/Jab_0/senjou")
+backgroundChange.run()
 
-# backgroundChange = BackgroundChange("../../output/images/F-tilt_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/F-tilt_0/senjou")
-# backgroundChange.run()
+backgroundChange = BackgroundChange("../../output/images/N-air_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/N-air_0/senjou")
+backgroundChange.run()
 
-# backgroundChange = BackgroundChange("../../output/images/Grab-blow_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/Grab-blow_0/senjou")
-# backgroundChange.run()
+backgroundChange = BackgroundChange("../../output/images/NB_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/NB_0/senjou")
+backgroundChange.run()
 
-# backgroundChange = BackgroundChange("../../output/images/Jab_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/Jab_0/senjou")
-# backgroundChange.run()
+backgroundChange = BackgroundChange("../../output/images/Side-B_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/Side-B_0/senjou")
+backgroundChange.run()
 
-# backgroundChange = BackgroundChange("../../output/images/N-air_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/N-air_0/senjou")
-# backgroundChange.run()
+backgroundChange = BackgroundChange("../../output/images/U-air_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/U-air_0/senjou")
+backgroundChange.run()
 
-# backgroundChange = BackgroundChange("../../output/images/NB_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/NB_0/senjou")
-# backgroundChange.run()
+backgroundChange = BackgroundChange("../../output/images/U-smash_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/U-smash_0/senjou")
+backgroundChange.run()
 
-# backgroundChange = BackgroundChange("../../output/images/Side-B_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/Side-B_0/senjou")
-# backgroundChange.run()
+backgroundChange = BackgroundChange("../../output/images/U-throw_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/U-throw_0/senjou")
+backgroundChange.run()
 
-# backgroundChange = BackgroundChange("../../output/images/U-air_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/U-air_0/senjou")
-# backgroundChange.run()
+backgroundChange = BackgroundChange("../../output/images/U-tilt_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/U-tilt_0/senjou")
+backgroundChange.run()
 
-# backgroundChange = BackgroundChange("../../output/images/U-smash_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/U-smash_0/senjou")
-# backgroundChange.run()
-
-# backgroundChange = BackgroundChange("../../output/images/U-throw_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/U-throw_0/senjou")
-# backgroundChange.run()
-
-# backgroundChange = BackgroundChange("../../output/images/U-tilt_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/U-tilt_0/senjou")
-# backgroundChange.run()
-
-# backgroundChange = BackgroundChange("../../output/images/Up-B_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/Up-B_0/senjou")
-# backgroundChange.run()
+backgroundChange = BackgroundChange("../../output/images/Up-B_0/only_mask_resize", "../../input/images/stage/resize/senjou.png", "../../output/images/Up-B_0/senjou")
+backgroundChange.run()
 
 # backgroundChange = BackgroundChange("../../output/images/jabDa_0/mask_image", "../../input/images/stage/resize", "../../output/images/jabDa_0/senjou")
 
@@ -914,110 +914,111 @@ from combination import Combination
 # combination = Combination("../../output/images/B-throw_0/only_mask_resize_B-throw", "../../output/images/B-throw_0/mask_resize_kavi", "../../output/images/B-throw_0/conbination_mask")
 # combination.combine_images()
 
-resize = Resize("../../output/images/D-air_0/mask", "../../output/images/D-air_0/mask_resize_kavi")
-resize.resize()
+# resize = Resize("../../output/images/D-air_0/mask", "../../output/images/D-air_0/mask_resize_kavi")
+# resize.resize()
 
-combination = Combination("../../output/images/D-air_0/only_mask_resize_D-air", "../../output/images/D-air_0/mask_resize_kavi", "../../output/images/D-air_0/conbination_mask")
-combination.combine_images()
+# combination = Combination("../../output/images/D-air_0/only_mask_resize_D-air", "../../output/images/D-air_0/mask_resize_kavi", "../../output/images/D-air_0/conbination_mask")
+# combination.combine_images()
 
-resize = Resize("../../output/images/D-throw_0/mask", "../../output/images/D-throw_0/mask_resize_kavi")
-resize.resize()
+# resize = Resize("../../output/images/D-throw_0/mask", "../../output/images/D-throw_0/mask_resize_kavi")
+# resize.resize()
 
-combination = Combination("../../output/images/D-throw_0/only_mask_resize_D-throw", "../../output/images/D-throw_0/mask_resize_kavi", "../../output/images/D-throw_0/conbination_mask")
-combination.combine_images()
+# combination = Combination("../../output/images/D-throw_0/only_mask_resize_D-throw", "../../output/images/D-throw_0/mask_resize_kavi", "../../output/images/D-throw_0/conbination_mask")
+# combination.combine_images()
 
-resize = Resize("../../output/images/D-tilt_0/mask", "../../output/images/D-tilt_0/mask_resize_kavi")
-resize.resize()
+# resize = Resize("../../output/images/D-tilt_0/mask", "../../output/images/D-tilt_0/mask_resize_kavi")
+# resize.resize()
 
-combination = Combination("../../output/images/D-tilt_0/only_mask_resize_D-tilt", "../../output/images/D-tilt_0/mask_resize_kavi", "../../output/images/D-tilt_0/conbination_mask")
-combination.combine_images()
+# combination = Combination("../../output/images/D-tilt_0/only_mask_resize_D-tilt", "../../output/images/D-tilt_0/mask_resize_kavi", "../../output/images/D-tilt_0/conbination_mask")
+# combination.combine_images()
 
-resize = Resize("../../output/images/DA_0/mask", "../../output/images/DA_0/mask_resize_kavi")
-resize.resize()
+# resize = Resize("../../output/images/DA_0/mask", "../../output/images/DA_0/mask_resize_kavi")
+# resize.resize()
 
-combination = Combination("../../output/images/DA_0/only_mask_resize_DA", "../../output/images/DA_0/mask_resize_kavi", "../../output/images/DA_0/conbination_mask")
-combination.combine_images()
+# combination = Combination("../../output/images/DA_0/only_mask_resize_DA", "../../output/images/DA_0/mask_resize_kavi", "../../output/images/DA_0/conbination_mask")
+# combination.combine_images()
 
-resize = Resize("../../output/images/Down-B_0/mask", "../../output/images/Down-B_0/mask_resize_kavi")
-resize.resize()
+# resize = Resize("../../output/images/Down-B_0/mask", "../../output/images/Down-B_0/mask_resize_kavi")
+# resize.resize()
 
-combination = Combination("../../output/images/Down-B_0/only_mask_resize_Down-B", "../../output/images/Down-B_0/mask_resize_kavi", "../../output/images/Down-B_0/conbination_mask")
-combination.combine_images()
+# combination = Combination("../../output/images/Down-B_0/only_mask_resize_Down-B", "../../output/images/Down-B_0/mask_resize_kavi", "../../output/images/Down-B_0/conbination_mask")
+# combination.combine_images()
 
-resize = Resize("../../output/images/F-air_0/mask", "../../output/images/F-air_0/mask_resize_kavi")
-resize.resize()
+# resize = Resize("../../output/images/F-air_0/mask", "../../output/images/F-air_0/mask_resize_kavi")
+# resize.resize()
 
-combination = Combination("../../output/images/F-air_0/only_mask_resize_F-air", "../../output/images/F-air_0/mask_resize_kavi", "../../output/images/F-air_0/conbination_mask")
-combination.combine_images()
+# combination = Combination("../../output/images/F-air_0/only_mask_resize_F-air", "../../output/images/F-air_0/mask_resize_kavi", "../../output/images/F-air_0/conbination_mask")
+# combination.combine_images()
 
-resize = Resize("../../output/images/F-smash_0/mask", "../../output/images/F-smash_0/mask_resize_kavi")
-resize.resize()
+# resize = Resize("../../output/images/F-smash_0/mask", "../../output/images/F-smash_0/mask_resize_kavi")
+# resize.resize()
 
-combination = Combination("../../output/images/F-smash_0/only_mask_resize_F-smash", "../../output/images/F-smash_0/mask_resize_kavi", "../../output/images/F-smash_0/conbination_mask")
-combination.combine_images()
+# combination = Combination("../../output/images/F-smash_0/only_mask_resize_F-smash", "../../output/images/F-smash_0/mask_resize_kavi", "../../output/images/F-smash_0/conbination_mask")
+# combination.combine_images()
 
-resize = Resize("../../output/images/F-throw_0/mask", "../../output/images/F-throw_0/mask_resize_kavi")
-resize.resize()
+# resize = Resize("../../output/images/F-throw_0/mask", "../../output/images/F-throw_0/mask_resize_kavi")
+# resize.resize()
 
-combination = Combination("../../output/images/F-throw_0/only_mask_resize_F-throw", "../../output/images/F-throw_0/mask_resize_kavi", "../../output/images/F-throw_0/conbination_mask")
-combination.combine_images()
+# combination = Combination("../../output/images/F-throw_0/only_mask_resize_F-throw", "../../output/images/F-throw_0/mask_resize_kavi", "../../output/images/F-throw_0/conbination_mask")
+# combination.combine_images()
 
-resize = Resize("../../output/images/Grab-blow_0/mask", "../../output/images/Grab-blow_0/mask_resize_kavi")
-resize.resize()
+# resize = Resize("../../output/images/Grab-blow_0/mask", "../../output/images/Grab-blow_0/mask_resize_kavi")
+# resize.resize()
 
-combination = Combination("../../output/images/Grab-blow_0/only_mask_resize_Grab-blow", "../../output/images/Grab-blow_0/mask_resize_kavi", "../../output/images/Grab-blow_0/conbination_mask")
-combination.combine_images()
+# combination = Combination("../../output/images/Grab-blow_0/only_mask_resize_Grab-blow", "../../output/images/Grab-blow_0/mask_resize_kavi", "../../output/images/Grab-blow_0/conbination_mask")
+# combination.combine_images()
 
-resize = Resize("../../output/images/Jab_0/mask", "../../output/images/Jab_0/mask_resize_kavi")
-resize.resize()
+# resize = Resize("../../output/images/Jab_0/mask", "../../output/images/Jab_0/mask_resize_kavi")
+# resize.resize()
 
-combination = Combination("../../output/images/Jab_0/only_mask_resize_Jab", "../../output/images/Jab_0/mask_resize_kavi", "../../output/images/Jab_0/conbination_mask")
-combination.combine_images()
+# combination = Combination("../../output/images/Jab_0/only_mask_resize_Jab", "../../output/images/Jab_0/mask_resize_kavi", "../../output/images/Jab_0/conbination_mask")
+# combination.combine_images()
 
-resize = Resize("../../output/images/N-air_0/mask", "../../output/images/N-air_0/mask_resize_kavi")
-resize.resize()
+# resize = Resize("../../output/images/N-air_0/mask", "../../output/images/N-air_0/mask_resize_kavi")
+# resize.resize()
 
-combination = Combination("../../output/images/N-air_0/only_mask_resize_N-air", "../../output/images/N-air_0/mask_resize_kavi", "../../output/images/N-air_0/conbination_mask")
-combination.combine_images()
+# combination = Combination("../../output/images/N-air_0/only_mask_resize_N-air", "../../output/images/N-air_0/mask_resize_kavi", "../../output/images/N-air_0/conbination_mask")
+# combination.combine_images()
 
-resize = Resize("../../output/images/NB_0/mask", "../../output/images/NB_0/mask_resize_kavi")
-resize.resize()
+# resize = Resize("../../output/images/NB_0/mask", "../../output/images/NB_0/mask_resize_kavi")
+# resize.resize()
 
-combination = Combination("../../output/images/NB_0/only_mask_resize_NB", "../../output/images/NB_0/mask_resize_kavi", "../../output/images/NB_0/conbination_mask")
-combination.combine_images()
+# combination = Combination("../../output/images/NB_0/only_mask_resize_NB", "../../output/images/NB_0/mask_resize_kavi", "../../output/images/NB_0/conbination_mask")
+# combination.combine_images()
 
-resize = Resize("../../output/images/Side-B_0/mask", "../../output/images/Side-B_0/mask_resize_kavi")
-resize.resize()
+# resize = Resize("../../output/images/Side-B_0/mask", "../../output/images/Side-B_0/mask_resize_kavi")
+# resize.resize()
 
-combination = Combination("../../output/images/Side-B_0/only_mask_resize_Side-B", "../../output/images/Side-B_0/mask_resize_kavi", "../../output/images/Side-B_0/conbination_mask")
-combination.combine_images()
+# combination = Combination("../../output/images/Side-B_0/only_mask_resize_Side-B", "../../output/images/Side-B_0/mask_resize_kavi", "../../output/images/Side-B_0/conbination_mask")
+# combination.combine_images()
 
-resize = Resize("../../output/images/U-air_0/mask", "../../output/images/U-air_0/mask_resize_kavi")
-resize.resize()
+# resize = Resize("../../output/images/U-air_0/mask", "../../output/images/U-air_0/mask_resize_kavi")
+# resize.resize()
 
-combination = Combination("../../output/images/U-air_0/only_mask_resize_U-air", "../../output/images/U-air_0/mask_resize_kavi", "../../output/images/U-air_0/conbination_mask")
-combination.combine_images()
+# combination = Combination("../../output/images/U-air_0/only_mask_resize_U-air", "../../output/images/U-air_0/mask_resize_kavi", "../../output/images/U-air_0/conbination_mask")
+# combination.combine_images()
 
-resize = Resize("../../output/images/U-smash_0/mask", "../../output/images/U-smash_0/mask_resize_kavi")
-resize.resize()
+# resize = Resize("../../output/images/U-smash_0/mask", "../../output/images/U-smash_0/mask_resize_kavi")
+# resize.resize()
 
-combination = Combination("../../output/images/U-smash_0/only_mask_resize_U-smash", "../../output/images/U-smash_0/mask_resize_kavi", "../../output/images/U-smash_0/conbination_mask")
-combination.combine_images()
+# combination = Combination("../../output/images/U-smash_0/only_mask_resize_U-smash", "../../output/images/U-smash_0/mask_resize_kavi", "../../output/images/U-smash_0/conbination_mask")
+# combination.combine_images()
 
-resize = Resize("../../output/images/U-throw_0/mask", "../../output/images/U-throw_0/mask_resize_kavi")
-resize.resize()
+# resize = Resize("../../output/images/U-throw_0/mask", "../../output/images/U-throw_0/mask_resize_kavi")
+# resize.resize()
 
-combination = Combination("../../output/images/U-throw_0/only_mask_resize_U-throw", "../../output/images/U-throw_0/mask_resize_kavi", "../../output/images/U-throw_0/conbination_mask")
-combination.combine_images()
+# combination = Combination("../../output/images/U-throw_0/only_mask_resize_U-throw", "../../output/images/U-throw_0/mask_resize_kavi", "../../output/images/U-throw_0/conbination_mask")
+# combination.combine_images()
 
-resize = Resize("../../output/images/U-tilt_0/mask", "../../output/images/U-tilt_0/mask_resize_kavi")
-resize.resize()
+# resize = Resize("../../output/images/U-tilt_0/mask", "../../output/images/U-tilt_0/mask_resize_kavi")
+# resize.resize()
 
-combination = Combination("../../output/images/U-tilt_0/only_mask_resize_U-tilt", "../../output/images/U-tilt_0/mask_resize_kavi", "../../output/images/U-tilt_0/conbination_mask")
-combination.combine_images()
+# combination = Combination("../../output/images/U-tilt_0/only_mask_resize_U-tilt", "../../output/images/U-tilt_0/mask_resize_kavi", "../../output/images/U-tilt_0/conbination_mask")
+# combination.combine_images()
 
-resize = Resize("../../output/images/Up-B_0/mask", "../../output/images/Up-B_0/mask_resize_kavi")
-resize.resize()
+# resize = Resize("../../output/images/Up-B_0/mask", "../../output/images/Up-B_0/mask_resize_kavi")
+# resize.resize()
 
-combination = Combination("../../output/images/Up-B_0/only_mask_resize_Up-B", "../../output/images/Up-B_0/mask_resize_kavi", "../../output/images/Up-B_0/conbination_mask")
-combination.combine_images()
+# combination = Combination("../../output/images/Up-B_0/only_mask_resize_Up-B", "../../output/images/Up-B_0/mask_resize_kavi", "../../output/images/Up-B_0/conbination_mask")
+# combination.combine_images()
+
