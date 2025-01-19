@@ -20,8 +20,12 @@ class Accuracy():
         label_correct = {}  # 正しく予測できた数
         label_predicted = {}  # 予測した総数
         
+        # remove_class = ["F-throw", "U-throw", "D-throw", "B-throw", "Grab-blow", "Grab", "Notwaza"]
         remove_class = ["F-throw", "U-throw", "D-throw", "B-throw", "Grab-blow", "Grab"]
+        
+        # remove_class = ["Notwaza"]
         # remove_class = []
+        
         
         for i, value in enumerate(self.txt_df):
             true_label = value[0]
@@ -55,7 +59,6 @@ class Accuracy():
 
         # 全体の正解率を出力
         print(self.total_samples, self.total_correct)
-        print(f"Accuracy: {self.total_correct / self.total_samples * 100}%")
         print(label_counts)
         for label, count in label_counts.items():
             if label in label_correct:
@@ -69,20 +72,58 @@ class Accuracy():
         print("Label\tPrecision\tRecall\t\tF1-Score")
         print("-" * 50)
         
+        total_tp = 0  # 全クラスの True Positive の合計
+        total_predicted = 0  # 全クラスの予測総数の合計
+        total_actual = 0  # 全クラスの実際の総数の合計
+        
         for label in sorted(set(list(label_counts.keys()) + list(label_predicted.keys()))):
+            tp = label_correct.get(label, 0)
+            predicted = label_predicted.get(label, 0)
+            actual = label_counts.get(label, 0)
+            
+            total_tp += tp
+            total_predicted += predicted
+            total_actual += actual
+            
             # Precision = TP / (TP + FP)
-            precision = label_correct.get(label, 0) / label_predicted.get(label, 1) * 100
+            precision = tp / predicted * 100 if predicted > 0 else 0
             
             # Recall = TP / (TP + FN)
-            recall = label_correct.get(label, 0) / label_counts.get(label, 1) * 100
+            recall = tp / actual * 100 if actual > 0 else 0
     
             # F1 Score = 2 * (Precision * Recall) / (Precision + Recall)
             f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0
             
-            print(f"{label}\t{precision:.2f}%\t\t{recall:.2f}%\t\t{f1:.2f}　　　おまけ：TP: {label_correct.get(label, 0) }, FP: {label_predicted.get(label, 1) - label_correct.get(label, 0) }")
+            print(f"{label}\t{precision:.2f}%\t\t{recall:.2f}%\t\t{f1:.2f}　　　おまけ：TP: {tp}, FP: {predicted - tp}")
+            
+        # マクロ平均の計算と出力
+        # 各クラスのPrecision、Recallの平均を計算
+        precisions = []
+        recalls = []
+        for label in sorted(set(list(label_counts.keys()) + list(label_predicted.keys()))):
+            if label not in remove_class:
+                tp = label_correct.get(label, 0)
+                predicted = label_predicted.get(label, 0)
+                actual = label_counts.get(label, 0)
+                
+                precision = tp / predicted * 100 if predicted > 0 else 0
+                recall = tp / actual * 100 if actual > 0 else 0
+                
+                precisions.append(precision)
+                recalls.append(recall)
+            
+        macro_precision = sum(precisions) / len(precisions) if precisions else 0
+        macro_recall = sum(recalls) / len(recalls) if recalls else 0
+        macro_f1 = 2 * macro_precision * macro_recall / (macro_precision + macro_recall) if (macro_precision + macro_recall) > 0 else 0
+        
+        print("\n全体の指標:")
+        print(f"Accuracy: {self.total_correct / self.total_samples * 100}%")
+        print(f"Macro Precision: {macro_precision:.2f}%")
+        print(f"Macro Recall: {macro_recall:.2f}%") 
+        print(f"Macro F1-Score: {macro_f1:.2f}")
 
 if __name__ == "__main__":
     accuracy = Accuracy("result_data/yolov3_yossi_electroplankton_24_1.txt", "result_data/yolov3_yossi_electroplankton_24_1.csv")
     accuracy.calculate_accuracy()
-    # accuracy = Accuracy("train_data/yolov3_yossi_senjou_24_0.txt", "result_data/yolov3_yossi_senjou_24_0.csv")
+    # accuracy = Accuracy("result_data/yolov3_yossi_senjou_24_0.txt", "result_data/yolov3_yossi_senjou_24_0.csv")
     # accuracy.calculate_accuracy()
