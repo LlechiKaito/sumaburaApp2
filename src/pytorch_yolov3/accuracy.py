@@ -82,7 +82,7 @@ class Accuracy():
             print(f"{label}\t{precision:.2f}%\t\t{recall:.2f}%\t\t{f1:.2f}　　　おまけ：TP: {label_correct.get(label, 0) }, FP: {label_predicted.get(label, 1) - label_correct.get(label, 0) }")
 
 if __name__ == "__main__":
-    accuracy = Accuracy("train_data/yolov3_yossi_electroplankton_24_1.txt", "result_data/yolov3_yossi_electroplankton_24_1.csv")
+    accuracy = Accuracy("result_data/yolov3_yossi_electroplankton_24_1.txt", "result_data/yolov3_yossi_electroplankton_24_1.csv")
     accuracy.calculate_accuracy()
     # accuracy = Accuracy("train_data/yolov3_yossi_senjou_24_0.txt", "result_data/yolov3_yossi_senjou_24_0.csv")
     # accuracy.calculate_accuracy()
