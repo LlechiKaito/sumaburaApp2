@@ -60,9 +60,12 @@ class Accuracy():
         # 全体の正解率を出力
         print(self.total_samples, self.total_correct)
         print(label_counts)
+        accuracy_sum = 0
         for label, count in label_counts.items():
             if label in label_correct:
+                
                 print(f"{label}: 正解数：{ label_correct[label] }, 総数：{ count }")
+                accuracy_sum += label_correct[label] / count
                 print(f"{label}: {label_correct[label] / count * 100}%")
             else:
                 print(f"{label}: 0%")
@@ -72,28 +75,27 @@ class Accuracy():
         print("Label\tPrecision\tRecall\t\tF1-Score")
         print("-" * 50)
         
-        total_tp = 0  # 全クラスの True Positive の合計
-        total_predicted = 0  # 全クラスの予測総数の合計
-        total_actual = 0  # 全クラスの実際の総数の合計
+        precision_sum = 0  # 全クラスの True Positive の合計
+        recall_sum = 0  # 全クラスの予測総数の合計
+        f1_sum = 0  # 全クラスの実際の総数の合計
         
         for label in sorted(set(list(label_counts.keys()) + list(label_predicted.keys()))):
             tp = label_correct.get(label, 0)
             predicted = label_predicted.get(label, 0)
             actual = label_counts.get(label, 0)
             
-            total_tp += tp
-            total_predicted += predicted
-            total_actual += actual
-            
             # Precision = TP / (TP + FP)
             precision = tp / predicted * 100 if predicted > 0 else 0
-            
+            precision_sum += precision
+
             # Recall = TP / (TP + FN)
             recall = tp / actual * 100 if actual > 0 else 0
-    
+            recall_sum += recall
+
             # F1 Score = 2 * (Precision * Recall) / (Precision + Recall)
             f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0
-            
+            f1_sum += f1
+
             print(f"{label}\t{precision:.2f}%\t\t{recall:.2f}%\t\t{f1:.2f}　　　おまけ：TP: {tp}, FP: {predicted - tp}")
             
         # マクロ平均の計算と出力
@@ -112,18 +114,22 @@ class Accuracy():
                 precisions.append(precision)
                 recalls.append(recall)
             
-        macro_precision = sum(precisions) / len(precisions) if precisions else 0
-        macro_recall = sum(recalls) / len(recalls) if recalls else 0
-        macro_f1 = 2 * macro_precision * macro_recall / (macro_precision + macro_recall) if (macro_precision + macro_recall) > 0 else 0
+        accuracy = accuracy_sum / len(label_counts) if label_counts else 0
+        precision = precision_sum / len(precisions) if precisions else 0
+        recall = recall_sum / len(recalls) if recalls else 0
+        f1 = f1_sum / len(label_counts) if label_counts else 0
         
         print("\n全体の指標:")
-        print(f"Accuracy: {self.total_correct / self.total_samples * 100}%")
-        print(f"Macro Precision: {macro_precision:.2f}%")
-        print(f"Macro Recall: {macro_recall:.2f}%") 
-        print(f"Macro F1-Score: {macro_f1:.2f}")
+        print(f"Accuracy: {accuracy * 100}%")
+        print(f"Precision: {precision:.2f}%")
+        print(f"Recall: {recall:.2f}%") 
+        print(f"F1-Score: {f1:.2f}%")
 
 if __name__ == "__main__":
     accuracy = Accuracy("result_data/yolov3_yossi_electroplankton_24_1.txt", "result_data/yolov3_yossi_electroplankton_24_1.csv")
     accuracy.calculate_accuracy()
-    # accuracy = Accuracy("result_data/yolov3_yossi_senjou_24_0.txt", "result_data/yolov3_yossi_senjou_24_0.csv")
+    accuracy = Accuracy("result_data/yolov3_yossi_senjou_24_0.txt", "result_data/yolov3_yossi_senjou_24_0.csv")
+    accuracy.calculate_accuracy()
+    # accuracy = Accuracy("result_data/yolov3_yossi_electroplankton_18_0.txt", "result_data/yolov3_yossi_electroplankton_18_0.csv")
     # accuracy.calculate_accuracy()
+    

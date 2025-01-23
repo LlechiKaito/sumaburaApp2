@@ -1,6 +1,6 @@
 model:
   name: "yolov3"
-  n_classes: 24
+  n_classes: 18
   class_names: "custom_classes.txt"
   ignore_threshold: 0.7
   anchors: [[10, 13], [16, 30], [33, 23],
@@ -25,6 +25,6 @@ augmentation:
   jitter: 0.3
 test:
   batch_size: 32
-  conf_threshold: 0.1
+  conf_threshold: 0.01
   nms_threshold: 0.45
   img_size: 608

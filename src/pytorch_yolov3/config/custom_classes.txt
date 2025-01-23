@@ -16,9 +16,3 @@ U-air
 U-smash
 U-tilt
 Up-B
-B-throw
-D-throw
-F-throw
-U-throw
-Grab-blow
-Grab

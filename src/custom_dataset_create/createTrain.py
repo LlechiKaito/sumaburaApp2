@@ -21,20 +21,21 @@ input_text_dir = ["../../output/texts/B-air_0",
                   "../../output/texts/U-throw_0",
                   "../../output/texts/U-tilt_0", "../../output/texts/Up-B_0"
                 ]
-# input_image_dir = ["../../input/images/B-air_0/resize2", "../../input/images/B-throw_0/resize2", 
-#                    "../../input/images/D-air_0/resize2", 
-#                 #    "../../input/images/D-smash_0/resize2", 
-#                    "../../input/images/D-throw_0/resize2", "../../input/images/D-tilt_0/resize2",
-#                    "../../input/images/DA_0/resize2", "../../input/images/Down-B_0/resize2",
-#                    "../../input/images/F-air_0/resize2", "../../input/images/F-smash_0/resize2",
-#                    "../../input/images/F-throw_0/resize2", "../../input/images/F-tilt_0/resize2",
-#                    "../../input/images/Grab-blow_0/resize2", "../../input/images/Jab_0/resize2",
-#                    "../../input/images/N-air_0/resize2", "../../input/images/NB_0/resize2",
-#                    "../../input/images/Side-B_0/resize2", "../../input/images/U-air_0/resize2",
-#                    "../../input/images/U-smash_0/resize2", "../../input/images/U-throw_0/resize2",
-#                    "../../input/images/U-tilt_0/resize2", "../../input/images/Up-B_0/resize2"
-#                 ]
-# senjouステージの奴
+input_image_dir = ["../../input/images/B-air_0/resize2", "../../input/images/B-throw_0/resize2", 
+                   "../../input/images/D-air_0/resize2", 
+                #    "../../input/images/D-smash_0/resize2", 
+                   "../../input/images/D-throw_0/resize2", "../../input/images/D-tilt_0/resize2",
+                   "../../input/images/DA_0/resize2", "../../input/images/Down-B_0/resize2",
+                   "../../input/images/F-air_0/resize2", "../../input/images/F-smash_0/resize2",
+                   "../../input/images/F-throw_0/resize2", "../../input/images/F-tilt_0/resize2",
+                   "../../input/images/Grab-blow_0/resize2", "../../input/images/Jab_0/resize2",
+                   "../../input/images/N-air_0/resize2", "../../input/images/NB_0/resize2",
+                   "../../input/images/Side-B_0/resize2", "../../input/images/U-air_0/resize2",
+                   "../../input/images/U-smash_0/resize2", "../../input/images/U-throw_0/resize2",
+                   "../../input/images/U-tilt_0/resize2", "../../input/images/Up-B_0/resize2"
+                ]
+
+# senjouステージの奴（ヨッシーのみ）
 # input_image_dir = ["../../output/images/B-air_0/senjou", "../../output/images/B-throw_0/senjou", 
 #                    "../../output/images/D-air_0/senjou", 
 #                 #    "../../output/images/D-smash_0/senjou", 
@@ -49,24 +50,25 @@ input_text_dir = ["../../output/texts/B-air_0",
 #                    "../../output/images/U-tilt_0/senjou", "../../output/images/Up-B_0/senjou"
 #                 ]
 
-input_image_dir = ["../../output/images/B-air_0/senjou2", 
-                   "../../output/images/B-throw_0/senjou2", 
-                   "../../output/images/D-air_0/senjou2", 
-                #    "../../output/images/D-smash_0/senjou2", 
-                   "../../output/images/D-throw_0/senjou2", 
-                   "../../output/images/D-tilt_0/senjou2",
-                   "../../output/images/DA_0/senjou2", "../../output/images/Down-B_0/senjou2",
-                   "../../output/images/F-air_0/senjou2", "../../output/images/F-smash_0/senjou2",
-                   "../../output/images/F-throw_0/senjou2", 
-                   "../../output/images/F-tilt_0/senjou2",
-                   "../../output/images/Grab-blow_0/senjou2", 
-                   "../../output/images/Jab_0/senjou2",
-                   "../../output/images/N-air_0/senjou2", "../../output/images/NB_0/senjou2",
-                   "../../output/images/Side-B_0/senjou2", "../../output/images/U-air_0/senjou2",
-                   "../../output/images/U-smash_0/senjou2", 
-                   "../../output/images/U-throw_0/senjou2",
-                   "../../output/images/U-tilt_0/senjou2", "../../output/images/Up-B_0/senjou2"
-                ]
+# ヨッシー＆カービィーどちらもいるやつ
+# input_image_dir = ["../../output/images/B-air_0/senjou2", 
+#                    "../../output/images/B-throw_0/senjou2", 
+#                    "../../output/images/D-air_0/senjou2", 
+#                 #    "../../output/images/D-smash_0/senjou2", 
+#                    "../../output/images/D-throw_0/senjou2", 
+#                    "../../output/images/D-tilt_0/senjou2",
+#                    "../../output/images/DA_0/senjou2", "../../output/images/Down-B_0/senjou2",
+#                    "../../output/images/F-air_0/senjou2", "../../output/images/F-smash_0/senjou2",
+#                    "../../output/images/F-throw_0/senjou2", 
+#                    "../../output/images/F-tilt_0/senjou2",
+#                    "../../output/images/Grab-blow_0/senjou2", 
+#                    "../../output/images/Jab_0/senjou2",
+#                    "../../output/images/N-air_0/senjou2", "../../output/images/NB_0/senjou2",
+#                    "../../output/images/Side-B_0/senjou2", "../../output/images/U-air_0/senjou2",
+#                    "../../output/images/U-smash_0/senjou2", 
+#                    "../../output/images/U-throw_0/senjou2",
+#                    "../../output/images/U-tilt_0/senjou2", "../../output/images/Up-B_0/senjou2"
+#                 ]
 
 # 出力ディレクトリのパス
 output_dir = "../pytorch_yolov3/custom_dataset"
@@ -92,11 +94,11 @@ for i, text_dir in enumerate(input_text_dir):
                     class_counts[class_name] = 1
                 else:
                     class_counts[class_name] += 1
-                output_text_path = os.path.join(output_label_dir, class_name + "_senjou_" + str(class_counts[class_name]).zfill(5) + ".txt")
+                output_text_path = os.path.join(output_label_dir, class_name + "_" + str(class_counts[class_name]).zfill(5) + ".txt")
                 with open(output_text_path, 'w') as f:
                     f.write(first_line)
 
-                output_image_path = os.path.join(output_image_dir, class_name + "_senjou_" + str(class_counts[class_name]).zfill(5) + ".png")
+                output_image_path = os.path.join(output_image_dir, class_name + "_" + str(class_counts[class_name]).zfill(5) + ".png")
                 # 元画像を読み込む
                 original_img = Image.open(os.path.join(input_image_dir[i], text_file.replace('.txt', '.jpeg')))
                 # 新しい画像を作成 (608x608, 白背景)
