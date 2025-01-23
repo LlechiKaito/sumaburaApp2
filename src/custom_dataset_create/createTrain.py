@@ -3,17 +3,22 @@ import shutil
 from PIL import Image
 
 # 入力ディレクトリのパス
-input_text_dir = ["../../output/texts/B-air_0", "../../output/texts/B-throw_0", 
+input_text_dir = ["../../output/texts/B-air_0", 
+                  "../../output/texts/B-throw_0", 
                   "../../output/texts/D-air_0", 
                 #   "../../output/texts/D-smash_0", 
-                  "../../output/texts/D-throw_0", "../../output/texts/D-tilt_0",
+                  "../../output/texts/D-throw_0", 
+                  "../../output/texts/D-tilt_0",
                   "../../output/texts/DA_0", "../../output/texts/Down-B_0",
                   "../../output/texts/F-air_0", "../../output/texts/F-smash_0",
-                  "../../output/texts/F-throw_0", "../../output/texts/F-tilt_0",
-                  "../../output/texts/Grab-blow_0", "../../output/texts/Jab_0",
+                  "../../output/texts/F-throw_0", 
+                  "../../output/texts/F-tilt_0",
+                  "../../output/texts/Grab-blow_0", 
+                  "../../output/texts/Jab_0",
                   "../../output/texts/N-air_0", "../../output/texts/NB_0",
                   "../../output/texts/Side-B_0", "../../output/texts/U-air_0",
-                  "../../output/texts/U-smash_0", "../../output/texts/U-throw_0",
+                  "../../output/texts/U-smash_0", 
+                  "../../output/texts/U-throw_0",
                   "../../output/texts/U-tilt_0", "../../output/texts/Up-B_0"
                 ]
 # input_image_dir = ["../../input/images/B-air_0/resize2", "../../input/images/B-throw_0/resize2", 
@@ -30,18 +35,37 @@ input_text_dir = ["../../output/texts/B-air_0", "../../output/texts/B-throw_0",
 #                    "../../input/images/U-tilt_0/resize2", "../../input/images/Up-B_0/resize2"
 #                 ]
 # senjouステージの奴
-input_image_dir = ["../../output/images/B-air_0/senjou", "../../output/images/B-throw_0/senjou", 
-                   "../../output/images/D-air_0/senjou", 
-                #    "../../output/images/D-smash_0/senjou", 
-                   "../../output/images/D-throw_0/senjou", "../../output/images/D-tilt_0/senjou",
-                   "../../output/images/DA_0/senjou", "../../output/images/Down-B_0/senjou",
-                   "../../output/images/F-air_0/senjou", "../../output/images/F-smash_0/senjou",
-                   "../../output/images/F-throw_0/senjou", "../../output/images/F-tilt_0/senjou",
-                   "../../output/images/Grab-blow_0/senjou", "../../output/images/Jab_0/senjou",
-                   "../../output/images/N-air_0/senjou", "../../output/images/NB_0/senjou",
-                   "../../output/images/Side-B_0/senjou", "../../output/images/U-air_0/senjou",
-                   "../../output/images/U-smash_0/senjou", "../../output/images/U-throw_0/senjou",
-                   "../../output/images/U-tilt_0/senjou", "../../output/images/Up-B_0/senjou"
+# input_image_dir = ["../../output/images/B-air_0/senjou", "../../output/images/B-throw_0/senjou", 
+#                    "../../output/images/D-air_0/senjou", 
+#                 #    "../../output/images/D-smash_0/senjou", 
+#                    "../../output/images/D-throw_0/senjou", "../../output/images/D-tilt_0/senjou",
+#                    "../../output/images/DA_0/senjou", "../../output/images/Down-B_0/senjou",
+#                    "../../output/images/F-air_0/senjou", "../../output/images/F-smash_0/senjou",
+#                    "../../output/images/F-throw_0/senjou", "../../output/images/F-tilt_0/senjou",
+#                    "../../output/images/Grab-blow_0/senjou", "../../output/images/Jab_0/senjou",
+#                    "../../output/images/N-air_0/senjou", "../../output/images/NB_0/senjou",
+#                    "../../output/images/Side-B_0/senjou", "../../output/images/U-air_0/senjou",
+#                    "../../output/images/U-smash_0/senjou", "../../output/images/U-throw_0/senjou",
+#                    "../../output/images/U-tilt_0/senjou", "../../output/images/Up-B_0/senjou"
+#                 ]
+
+input_image_dir = ["../../output/images/B-air_0/senjou2", 
+                   "../../output/images/B-throw_0/senjou2", 
+                   "../../output/images/D-air_0/senjou2", 
+                #    "../../output/images/D-smash_0/senjou2", 
+                   "../../output/images/D-throw_0/senjou2", 
+                   "../../output/images/D-tilt_0/senjou2",
+                   "../../output/images/DA_0/senjou2", "../../output/images/Down-B_0/senjou2",
+                   "../../output/images/F-air_0/senjou2", "../../output/images/F-smash_0/senjou2",
+                   "../../output/images/F-throw_0/senjou2", 
+                   "../../output/images/F-tilt_0/senjou2",
+                   "../../output/images/Grab-blow_0/senjou2", 
+                   "../../output/images/Jab_0/senjou2",
+                   "../../output/images/N-air_0/senjou2", "../../output/images/NB_0/senjou2",
+                   "../../output/images/Side-B_0/senjou2", "../../output/images/U-air_0/senjou2",
+                   "../../output/images/U-smash_0/senjou2", 
+                   "../../output/images/U-throw_0/senjou2",
+                   "../../output/images/U-tilt_0/senjou2", "../../output/images/Up-B_0/senjou2"
                 ]
 
 # 出力ディレクトリのパス

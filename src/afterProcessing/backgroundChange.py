@@ -64,12 +64,17 @@ class BackgroundChange:
 
             # マスクを反転
             mask_inv = cv2.bitwise_not(mask)
+            try:
+                # マスクを使って元画像から黒以外の部分を抽出
+                fg = cv2.bitwise_and(img, img, mask=mask_inv)
 
-            # マスクを使って元画像から黒以外の部分を抽出
-            fg = cv2.bitwise_and(img, img, mask=mask_inv)
+                # マスクを使って背景画像から黒い部分に入れる領域を抽出
+                bg = cv2.bitwise_and(stage_img, stage_img, mask=mask)
 
-            # マスクを使って背景画像から黒い部分に入れる領域を抽出
-            bg = cv2.bitwise_and(stage_img, stage_img, mask=mask)
+            except(cv2.error):
+                print(image_name)
+                print(cv2.error, self.directory_input_path, "プログラムを終了します．")
+                break
 
             # 前景と背景を合成
             result = cv2.add(fg, bg)
