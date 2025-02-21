@@ -3,7 +3,7 @@ from annotation import Annotation
 from backgroundChange import BackgroundChange
 import numpy as np
 from resize import Resize
-from combination import Combination
+from afterProcessing.conbination import Combination
 
 # リサイズ
 resize = Resize("../../input/images/B-air_0/resize", "../../input/images/B-air_0/resize2")
